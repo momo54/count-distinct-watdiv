@@ -10,11 +10,12 @@ wget https://github.com/blazegraph/database/releases/download/BLAZEGRAPH_RELEASE
 * get WatDiv Data
 ```
 wget http://dsg.uwaterloo.ca/watdiv/watdiv.10M.tar.bz2
+tar -xvjf watdiv.10M.tar.bz2
 ```
 
 * Ingest Data into Blazegraph
 ```
-java -cp blazegraph.jar com.bigdata.rdf.store.DataLoader -namespace kb -defaultGraph http://example.org/graph -file /path/to/yourfile.nt
+java -cp blazegraph.jar com.bigdata.rdf.store.DataLoader  config.properties watdiv.10M.nt
 ```
 
 * start blazegraph server
