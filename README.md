@@ -4,17 +4,20 @@ We have to compute Distinct values vs Distinct Frequencies.
 
 * install blazegraph
 ```
-wget https://github.com/blazegraph/database/releases/download/BLAZEGRAPH_RELEASE_2_1_5/blazegraph.jar
+wget https://github.com/blazegraph/database/releases/download/BLAZEGRAPH_2_1_6_RC/blazegraph.jar
 ```
 
 * get WatDiv Data
 ```
 wget http://dsg.uwaterloo.ca/watdiv/watdiv.10M.tar.bz2
+tar -xvjf watdiv.10M.tar.bz2
 ```
 
 * Ingest Data into Blazegraph
 ```
-java -cp blazegraph.jar com.bigdata.rdf.store.DataLoader -namespace kb -defaultGraph http://example.org/graph -file /path/to/yourfile.nt
+java -cp blazegraph.jar com.bigdata.rdf.store.DataLoader  config.properties watdiv.10M.nt
+or
+java -Djava.io.tmpdir=/GDD/tmp -cp blazegraph.jar com.bigdata.rdf.store.DataLoader -namespace kb -defaultGraph http://example.org/graph config.properties watdiv.10M.nt 
 ```
 
 * start blazegraph server
@@ -27,3 +30,5 @@ java -server -Xmx4g -jar blazegraph.jar
 mkdir output/cd_watdiv
 snakemake
 ```
+
+can use of https://github.com/Chat-Wane/sage-jena/tree/count_distinct/sage-blazegraph
