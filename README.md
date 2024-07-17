@@ -16,6 +16,8 @@ tar -xvjf watdiv.10M.tar.bz2
 * Ingest Data into Blazegraph
 ```
 java -cp blazegraph.jar com.bigdata.rdf.store.DataLoader  config.properties watdiv.10M.nt
+or
+java -Djava.io.tmpdir=/GDD/tmp -cp blazegraph.jar com.bigdata.rdf.store.DataLoader -namespace kb -defaultGraph http://example.org/graph config.properties watdiv.10M.nt 
 ```
 
 * start blazegraph server
