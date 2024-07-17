@@ -30,3 +30,5 @@ java -server -Xmx4g -jar blazegraph.jar
 mkdir output/cd_watdiv
 snakemake
 ```
+
+can use of https://github.com/Chat-Wane/sage-jena/tree/count_distinct/sage-blazegraph
