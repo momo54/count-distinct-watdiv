@@ -4,7 +4,7 @@ We have to compute Distinct values vs Distinct Frequencies.
 
 * install blazegraph
 ```
-wget https://github.com/blazegraph/database/releases/download/BLAZEGRAPH_RELEASE_2_1_5/blazegraph.jar
+wget https://github.com/blazegraph/database/releases/download/BLAZEGRAPH_2_1_6_RC/blazegraph.jar
 ```
 
 * get WatDiv Data
