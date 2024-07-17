@@ -10,6 +10,7 @@ wget https://github.com/blazegraph/database/releases/download/BLAZEGRAPH_RELEASE
 * get WatDiv Data
 ```
 wget http://dsg.uwaterloo.ca/watdiv/watdiv.10M.tar.bz2
+tar -xvjf watdiv.10M.tar.bz2
 ```
 
 * Ingest Data into Blazegraph
