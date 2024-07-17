@@ -12,7 +12,8 @@ def list_files(path):
         return glob.glob(path)
     files = list()
     for filename in os.listdir(path):
-        if filename.endswith(".sparql") and not filename.startswith("Q-10069"):
+#        if filename.endswith(".sparql") and not filename.startswith("Q-10069"):
+        if filename.endswith(".sparql") :
             files.append(f"{path}/{filename}")
     return files
 
