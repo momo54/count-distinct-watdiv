@@ -15,6 +15,7 @@ import csv
 import sys
 import logging
 import colorlog
+import pandas as pd
 
 # a visitor pattern for RDFLIB for rewriting queries
 # wdbench query 151
@@ -260,6 +261,10 @@ def rewrite_query(query,select,verbose,output):
     # output is dictinary with count, cd, freq...
     result={}
 
+    columns = ['query_name', 'nbtp', 'count', 'var', 'dv', 'df']
+    df = pd.DataFrame(columns=columns)
+
+
     with open(query) as f:
         query_str = f.read()
     parsed_query = parseQuery(query_str)
@@ -281,15 +286,20 @@ def rewrite_query(query,select,verbose,output):
     mcd=execute_sparql_query(rewrite_query_str)
     for key,info in mcd['results']['bindings'][0].items():
         result[key]=info['value']
+        df.loc[len(df)] = [result['query'], result['nbtp'], result['count'], key[2:], info['value'], info['value']]
 
     freq_queries=rewrite_freq(query_str)
     for var,query in freq_queries.items(): 
         logger.debug(f"executing {result['query']}:{query}")
         data=execute_sparql_query(query)
         result['freq'+var]=data['results']['bindings'][0]['dfreq']['value']
+        row = df[df['var'] == var[1:]]
+        df.loc[row.index, 'df'] = data['results']['bindings'][0]['dfreq']['value']
 #        print(f"var:{var}, freq:{data['results']['bindings'][0]['dfreq']['value']}")    
 
-    print(result)
+#    print(result)
+#    print(df)
+    print(df.to_string(header=False,index=False))
 #    filednames=result[0].keys()
 #    writer = csv.DictWriter(sys.stdout, fieldnames=result.keys())
 #    writer.writeheader()
