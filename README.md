@@ -32,3 +32,10 @@ snakemake
 ```
 
 can use of https://github.com/Chat-Wane/sage-jena/tree/count_distinct/sage-blazegraph
+
+snakemake needs pandas, need to be sure that pandas is available in the python used by snakemake, that can be different than the global python. on my mac:
+```
+/opt/homebrew/bin/snakemake
+#!/opt/homebrew/Cellar/snakemake/8.16.0/libexec/bin/python
+/opt/homebrew/Cellar/snakemake/8.16.0/libexec/bin/python -m pip install pandas
+```

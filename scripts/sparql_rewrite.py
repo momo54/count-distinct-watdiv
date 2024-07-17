@@ -331,7 +331,8 @@ def rewrite_query(query,select,verbose,output):
 
 #    print(result)
 #    print(df)
-    print(df.to_string(header=False,index=False))
+#    print(df.to_string(header=False,index=False))
+    df.to_csv(sys.stdout, header=False, index=False)
 #    filednames=result[0].keys()
 #    writer = csv.DictWriter(sys.stdout, fieldnames=result.keys())
 #    writer.writeheader()
