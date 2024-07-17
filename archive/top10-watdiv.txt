@@ -1,0 +1,116 @@
+10069.Query: SELECT (COUNT(*) as ?count) WHERE {
+	?v2 <http://www.geonames.org/ontology#parentCountry> ?v3.
+	?v0 <http://schema.org/nationality> ?v3.
+	?v0 <http://db.uwaterloo.ca/~galuc/wsdbm/gender> <http://db.uwaterloo.ca/~galuc/wsdbm/Gender1>.
+	?v0 <http://xmlns.com/foaf/givenName> ?v1.
+	?v4 <http://schema.org/eligibleRegion> ?v3.
+}
+Result: 4169173508
+Execution time: 765905.788422 milliseconds
+-------------------------------------
+10020.Query: SELECT (COUNT(*) as ?count) WHERE {
+	?v1 <http://schema.org/priceValidUntil> ?v8.
+	?v1 <http://purl.org/goodrelations/validFrom> ?v2.
+	?v1 <http://purl.org/goodrelations/validThrough> ?v3.
+	?v1 <http://schema.org/eligibleQuantity> ?v6.
+	?v0 <http://purl.org/goodrelations/offers> ?v1.
+	?v1 <http://schema.org/eligibleRegion> ?v7.
+	?v4 <http://schema.org/nationality> ?v7.
+	?v4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://db.uwaterloo.ca/~galuc/wsdbm/Role0>.
+}
+Result: 7554617
+Execution time: 9384.253502 milliseconds
+-------------------------------------
+10078.Query: SELECT (COUNT(*) as ?count) WHERE {
+	?v1 <http://schema.org/priceValidUntil> ?v8.
+	?v1 <http://purl.org/goodrelations/validFrom> ?v2.
+	?v1 <http://purl.org/goodrelations/validThrough> ?v3.
+	?v1 <http://schema.org/eligibleQuantity> ?v6.
+	?v0 <http://purl.org/goodrelations/offers> ?v1.
+	?v1 <http://schema.org/eligibleRegion> ?v7.
+	?v4 <http://schema.org/nationality> ?v7.
+	?v4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://db.uwaterloo.ca/~galuc/wsdbm/Role1>.
+}
+Result: 3932428
+Execution time: 7905.509710 milliseconds
+-------------------------------------
+10082.Query: SELECT (COUNT(*) as ?count) WHERE {
+	?v1 <http://schema.org/priceValidUntil> ?v8.
+	?v1 <http://purl.org/goodrelations/validFrom> ?v2.
+	?v1 <http://purl.org/goodrelations/validThrough> ?v3.
+	?v1 <http://schema.org/eligibleQuantity> ?v6.
+	?v0 <http://purl.org/goodrelations/offers> ?v1.
+	?v1 <http://schema.org/eligibleRegion> ?v7.
+	?v4 <http://schema.org/nationality> ?v7.
+	?v4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://db.uwaterloo.ca/~galuc/wsdbm/Role2>.
+}
+Result: 2663222
+Execution time: 7856.598854 milliseconds
+-------------------------------------
+10122.Query: SELECT (COUNT(*) as ?count) WHERE {
+	?v0 <http://xmlns.com/foaf/age> <http://db.uwaterloo.ca/~galuc/wsdbm/AgeGroup2>.
+	?v0 <http://schema.org/nationality> ?v8.
+	?v2 <http://schema.org/eligibleRegion> ?v8.
+	?v2 <http://purl.org/goodrelations/validFrom> ?v5.
+	?v2 <http://purl.org/goodrelations/validThrough> ?v6.
+	?v2 <http://purl.org/goodrelations/includes> ?v3.
+	?v2 <http://schema.org/eligibleQuantity> ?v7.
+	?v2 <http://purl.org/goodrelations/price> ?v4.
+}
+Result: 1821219
+Execution time: 23533.106565 milliseconds
+-------------------------------------
+10169.Query: SELECT (COUNT(*) as ?count) WHERE {
+	?v0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://db.uwaterloo.ca/~galuc/wsdbm/ProductCategory1>.
+	?v0 <http://schema.org/contentSize> ?v6.
+	?v0 <http://schema.org/contentRating> ?v5.
+	?v0 <http://schema.org/description> ?v7.
+	?v8 <http://db.uwaterloo.ca/~galuc/wsdbm/likes> ?v0.
+	?v0 <http://ogp.me/ns#tag> ?v1.
+	?v2 <http://ogp.me/ns#tag> ?v1.
+	?v2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> ?v4.
+}
+Result: 391715
+Execution time: 437.652826 milliseconds
+-------------------------------------
+10025.Query: SELECT (COUNT(*) as ?count) WHERE {
+	?v0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://db.uwaterloo.ca/~galuc/wsdbm/ProductCategory3>.
+	?v0 <http://schema.org/contentSize> ?v9.
+	?v0 <http://schema.org/keywords> ?v11.
+	?v0 <http://schema.org/description> ?v10.
+	?v0 <http://ogp.me/ns#tag> ?v1.
+	?v2 <http://ogp.me/ns#tag> ?v1.
+	?v0 <http://purl.org/stuff/rev#hasReview> ?v4.
+	?v4 <http://purl.org/stuff/rev#title> ?v8.
+	?v4 <http://purl.org/stuff/rev#text> ?v7.
+	?v12 <http://db.uwaterloo.ca/~galuc/wsdbm/purchaseFor> ?v0.
+	?v4 <http://purl.org/stuff/rev#rating> ?v5.
+	?v4 <http://purl.org/stuff/rev#reviewer> ?v6.
+}
+Result: 243150
+Execution time: 612.678766 milliseconds
+-------------------------------------
+1003.Query: SELECT (COUNT(*) as ?count) WHERE {
+	?v0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://db.uwaterloo.ca/~galuc/wsdbm/ProductCategory4>.
+	?v0 <http://schema.org/contentSize> ?v6.
+	?v0 <http://schema.org/contentRating> ?v5.
+	?v0 <http://schema.org/description> ?v7.
+	?v8 <http://db.uwaterloo.ca/~galuc/wsdbm/likes> ?v0.
+	?v0 <http://ogp.me/ns#tag> ?v1.
+	?v2 <http://ogp.me/ns#tag> ?v1.
+	?v2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> ?v4.
+}
+Result: 211989
+Execution time: 317.696571 milliseconds
+-------------------------------------
+10165.Query: SELECT (COUNT(*) as ?count) WHERE {
+	?v0 <http://ogp.me/ns#tag> <http://db.uwaterloo.ca/~galuc/wsdbm/Topic0>.
+	?v0 <http://schema.org/expires> ?v4.
+	?v0 <http://xmlns.com/foaf/homepage> ?v1.
+	?v0 <http://ogp.me/ns#title> ?v3.
+	?v0 <http://db.uwaterloo.ca/~galuc/wsdbm/hasGenre> ?v5.
+	?v6 <http://db.uwaterloo.ca/~galuc/wsdbm/likes> ?v0.
+	?v7 <http://db.uwaterloo.ca/~galuc/wsdbm/purchaseFor> ?v0.
+}
+Result: 207798
+Execution time: 78.193188 milliseconds

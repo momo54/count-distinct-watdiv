@@ -1,0 +1,108 @@
+Journal Count-Distinct...
+
+J'ai voulu savoir si #distinct freq << #distinct values sur les requêtes watdiv10M
+
+J'ai pris:
+10082.Query: SELECT (COUNT(*) as ?count) WHERE {
+	?v1 <http://schema.org/priceValidUntil> ?v8.
+	?v1 <http://purl.org/goodrelations/validFrom> ?v2.
+	?v1 <http://purl.org/goodrelations/validThrough> ?v3.
+	?v1 <http://schema.org/eligibleQuantity> ?v6.
+	?v0 <http://purl.org/goodrelations/offers> ?v1.
+	?v1 <http://schema.org/eligibleRegion> ?v7.
+	?v4 <http://schema.org/nationality> ?v7.
+	?v4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://db.uwaterloo.ca/~galuc/wsdbm/Role2>.
+}
+Result: 2663222
+Execution time: 7856.598854 milliseconds
+
+Si je prend ?v1 comme count-distinct:
+SELECT (COUNT(distinct ?v1) as ?dv1) WHERE {
+	?v1 <http://schema.org/priceValidUntil> ?v8.
+	?v1 <http://purl.org/goodrelations/validFrom> ?v2.
+	?v1 <http://purl.org/goodrelations/validThrough> ?v3.
+	?v1 <http://schema.org/eligibleQuantity> ?v6.
+	?v0 <http://purl.org/goodrelations/offers> ?v1.
+	?v1 <http://schema.org/eligibleRegion> ?v7.
+	?v4 <http://schema.org/nationality> ?v7.
+	?v4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://db.uwaterloo.ca/~galuc/wsdbm/Role2>.
+}
+
+-> dv1= 680 
+
+Distinct freq for dv1 :
+
+select ?dv1 (count(distinct ?v1) as ?ddv1) {
+ select ?v1 (count(?v1) as ?dv1) where {
+  SELECT * WHERE {
+	?v1 <http://schema.org/priceValidUntil> ?v8.
+	?v1 <http://purl.org/goodrelations/validFrom> ?v2.
+	?v1 <http://purl.org/goodrelations/validThrough> ?v3.
+	?v1 <http://schema.org/eligibleQuantity> ?v6.
+	?v0 <http://purl.org/goodrelations/offers> ?v1.
+	?v1 <http://schema.org/eligibleRegion> ?v7.
+	?v4 <http://schema.org/nationality> ?v7.
+	?v4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://db.uwaterloo.ca/~galuc/wsdbm/Role2>.
+  } 
+ } group by ?v1
+} group by ?dv1 order by ?dv1
+
+ 563 distinct frequencies...
+
+
+ Prenons d'autres variables: ?v7 ->
+
+ SELECT 
+(COUNT(distinct ?v0) as ?dv0) 
+(COUNT(distinct ?v1) as ?dv1) 
+(COUNT(distinct ?v2) as ?dv2) 
+(COUNT(distinct ?v3) as ?dv3) 
+(COUNT(distinct ?v4) as ?dv4) 
+(COUNT(distinct ?v6) as ?dv6) 
+(COUNT(distinct ?v7) as ?dv7) 
+WHERE {
+	?v1 <http://schema.org/priceValidUntil> ?v8.
+	?v1 <http://purl.org/goodrelations/validFrom> ?v2.
+	?v1 <http://purl.org/goodrelations/validThrough> ?v3.
+	?v1 <http://schema.org/eligibleQuantity> ?v6.
+	?v0 <http://purl.org/goodrelations/offers> ?v1.
+	?v1 <http://schema.org/eligibleRegion> ?v7.
+	?v4 <http://schema.org/nationality> ?v7.
+	?v4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://db.uwaterloo.ca/~galuc/wsdbm/Role2>.
+}
+
+dv0	dv1	dv2	dv3	dv4	 dv6	dv7
+858	680	169	119	4205 9	25
+
+select (count (distinct ?freq) as ?dfreq) {
+ select ?v4 (count(?v4) as ?freq) where {
+  SELECT * WHERE {
+	?v1 <http://schema.org/priceValidUntil> ?v8.
+	?v1 <http://purl.org/goodrelations/validFrom> ?v2.
+	?v1 <http://purl.org/goodrelations/validThrough> ?v3.
+	?v1 <http://schema.org/eligibleQuantity> ?v6.
+	?v0 <http://purl.org/goodrelations/offers> ?v1.
+	?v1 <http://schema.org/eligibleRegion> ?v7.
+	?v4 <http://schema.org/nationality> ?v7.
+	?v4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://db.uwaterloo.ca/~galuc/wsdbm/Role2>.
+  } 
+ } group by ?v4
+} 
+
+dfreq : 25
+
+with ?v0 -> 620
+with ?v1 -> 563
+with ?v2 -> 169
+with ?v3 -> 119
+with ?v4 -> 25
+with ?v6 -> 9
+with ?v7 -> 25
+
+?v0 : 858 / 620
+?v1 : 680 / 563
+?v2 : 169 / 169
+?v3 : 119 / 119
+?v4 : 4205 / 25
+?v6 : 9 / 9
+?v7 : 25 / 25
