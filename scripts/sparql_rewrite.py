@@ -129,10 +129,14 @@ class  CountVisitor(Visitor):
         self.my_query.append("}")
 
 class  CDVisitor(Visitor):
-   def visit_Project(self, project):
+    var=""
+    def __init__(self, param):
+        self.var = param
+        self.my_query = []
+
+    def visit_Project(self, project):
         #print("Visiting Project:", project)
-        vars=project.PV
-        self.my_query.append("select (COUNT(DISTINCT %s) as ?cd) WHERE {\n"%(vars[0].n3()))
+        self.my_query.append("select (COUNT(DISTINCT %s) as ?cd%s) WHERE {\n"%(self.var,self.var[1:]))
         self.visit(project.p)
         self.my_query.append("}")
 
@@ -221,6 +225,25 @@ def rewrite_freq(query_str):
 
     return queries
 
+def rewrite_countdistinct(query_str):
+    parsed_query = parseQuery(query_str)
+    algebra = translateQuery(parsed_query)
+#    print(pprintAlgebra(algebra))
+
+    bgp_visitor = BGPVisitor()
+    bgp_visitor.visit(algebra.algebra)
+
+    # print(f"vars in query:{bgp_visitor.bgp_vars}")
+
+    queries={}
+    for var in bgp_visitor.bgp_vars:
+        cdvisitor = CDVisitor(var.n3())
+        cdvisitor.visit(algebra.algebra)
+        result="".join(cdvisitor.my_query)
+        queries[var.n3()]=result
+
+    return queries
+
 
 
 @click.command()
@@ -281,12 +304,21 @@ def rewrite_query(query,select,verbose,output):
     count=execute_sparql_query(count_query)
     result['count']=count['results']['bindings'][0]['count']['value']
 
-    rewrite_query_str=rewrite_mcd(query_str)
-    logger.debug(f"executing {result['query']}:{rewrite_query_str}")
-    mcd=execute_sparql_query(rewrite_query_str)
-    for key,info in mcd['results']['bindings'][0].items():
-        result[key]=info['value']
-        df.loc[len(df)] = [result['query'], result['nbtp'], result['count'], key[2:], info['value'], info['value']]
+    ## multiple count distinct not good for memory
+    # rewrite_query_str=rewrite_mcd(query_str)
+    # logger.debug(f"executing {result['query']}:{rewrite_query_str}")
+    # mcd=execute_sparql_query(rewrite_query_str)
+    # for key,info in mcd['results']['bindings'][0].items():
+    #     result[key]=info['value']
+    #     df.loc[len(df)] = [result['query'], result['nbtp'], result['count'], key[2:], info['value'], info['value']]
+
+    ## same code, one query per count distinct
+    cd_queries=rewrite_countdistinct(query_str)
+    for var,query in cd_queries.items():
+        logger.debug(f"executing {result['query']}:{query}")
+        data=execute_sparql_query(query)
+        val=data['results']['bindings'][0]['cd'+var[1:]]['value']
+        df.loc[len(df)] = [result['query'], result['nbtp'], result['count'], var[1:], val, val]
 
     freq_queries=rewrite_freq(query_str)
     for var,query in freq_queries.items(): 
