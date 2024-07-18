@@ -16,6 +16,7 @@ import sys
 import logging
 import colorlog
 import pandas as pd
+import time
 
 # a visitor pattern for RDFLIB for rewriting queries
 # wdbench query 151
@@ -42,10 +43,15 @@ def execute_sparql_query(query):
     headers = {
         "Accept": "application/sparql-results+json"
     }
+    # Mesurer le temps d'exécution
+    start_time = time.time()
+
     response = requests.get(url, params={'query': query, 'format': 'json'}, headers=headers)
     
+    end_time = time.time()
+
     if response.status_code == 200:
-        return response.json()
+        return response.json(), end_time - start_time
     else:
         raise Exception(f"SPARQL query failed with status code {response.status_code}")
 
@@ -284,7 +290,7 @@ def rewrite_query(query,select,verbose,output):
     # output is dictinary with count, cd, freq...
     result={}
 
-    columns = ['query_name', 'nbtp', 'count', 'var', 'dv', 'df']
+    columns = ['query_name', 'nbtp', 'count','counttime', 'var', 'dv', 'df','timedv','timedf']
     df = pd.DataFrame(columns=columns)
 
 
@@ -301,8 +307,9 @@ def rewrite_query(query,select,verbose,output):
 
     count_query=rewrite_count(query_str)
     logger.debug(f"executing {result['query']}:{count_query}")
-    count=execute_sparql_query(count_query)
+    count,time=execute_sparql_query(count_query)
     result['count']=count['results']['bindings'][0]['count']['value']
+    result['counttime']=time
 
     ## multiple count distinct not good for memory
     # rewrite_query_str=rewrite_mcd(query_str)
@@ -316,17 +323,19 @@ def rewrite_query(query,select,verbose,output):
     cd_queries=rewrite_countdistinct(query_str)
     for var,query in cd_queries.items():
         logger.debug(f"executing {result['query']}:{query}")
-        data=execute_sparql_query(query)
+        data,time=execute_sparql_query(query)
+        print(f"data:{data}, time:{time}")
         val=data['results']['bindings'][0]['cd'+var[1:]]['value']
-        df.loc[len(df)] = [result['query'], result['nbtp'], result['count'], var[1:], val, val]
+        df.loc[len(df)] = [result['query'], result['nbtp'], result['count'],result['counttime'], var[1:], val,0 ,time,0]
 
     freq_queries=rewrite_freq(query_str)
     for var,query in freq_queries.items(): 
         logger.debug(f"executing {result['query']}:{query}")
-        data=execute_sparql_query(query)
-        result['freq'+var]=data['results']['bindings'][0]['dfreq']['value']
+        data,time=execute_sparql_query(query)
+        value=data['results']['bindings'][0]['dfreq']['value']
         row = df[df['var'] == var[1:]]
-        df.loc[row.index, 'df'] = data['results']['bindings'][0]['dfreq']['value']
+        df.loc[row.index, 'df'] = value
+        df.loc[row.index, 'timedf'] = time
 #        print(f"var:{var}, freq:{data['results']['bindings'][0]['dfreq']['value']}")    
 
 #    print(result)

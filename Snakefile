@@ -12,8 +12,8 @@ def list_files(path):
         return glob.glob(path)
     files = list()
     for filename in os.listdir(path):
-#        if filename.endswith(".sparql") and not filename.startswith("Q-10069"):
-        if filename.endswith(".sparql") :
+        if filename.endswith(".sparql") and not filename.startswith("Q-10069"):
+#        if filename.endswith(".sparql") :
             files.append(f"{path}/{filename}")
     return files
 
@@ -59,11 +59,15 @@ rule collect_all:
     run:
         print("Collecting data")
         with open(output[0], 'w') as outfile:
-            outfile.write("query, nbtp,count,var,dv,df\n")
+            outfile.write("query, nbtp,count,countime,var,dv,df,timedv,timedf\n")
             for path in input.data:
                 with open(path) as infile:
                     for line in infile:
                         outfile.write(line)
+        import pandas as pd
+        df = pd.read_csv(output[0])
+        df.sort_values(by='dv', ascending=False,inplace=True)
+        df.to_csv(output[0], index=False)
 
 rule collect_and_sort:
     input: 
