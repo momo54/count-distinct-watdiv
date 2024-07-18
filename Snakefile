@@ -58,6 +58,7 @@ rule collect_all:
     run:
         print("Collecting data")
         with open(output[0], 'w') as outfile:
+            outfile.write("query, nbtp,count,var,dv,df\n")
             for path in input.data:
                 with open(path) as infile:
                     for line in infile:
@@ -76,9 +77,9 @@ rule collect_and_sort:
 
         # Read each CSV file and append to the list
         for file in input.data:
-            df = pd.read_csv(file,sep=' ')
+            df = pd.read_csv(file)
             dataframes.append(df)
-
+        print(f"Dataframes: {dataframes}")
         # Concatenate all dataframes
         combined_df = pd.concat(dataframes)
         combined_df.sort_values(by=combined_df.columns[3], inplace=True)
