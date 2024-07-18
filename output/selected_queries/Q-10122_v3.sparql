@@ -1,0 +1,10 @@
+select (COUNT(DISTINCT ?v3) as ?cdv3) WHERE {
+?v0 <http://xmlns.com/foaf/age> <http://db.uwaterloo.ca/~galuc/wsdbm/AgeGroup2> . 
+?v0 <http://schema.org/nationality> ?v8 . 
+?v2 <http://schema.org/eligibleRegion> ?v8 . 
+?v2 <http://purl.org/goodrelations/includes> ?v3 . 
+?v2 <http://purl.org/goodrelations/price> ?v4 . 
+?v2 <http://purl.org/goodrelations/validFrom> ?v5 . 
+?v2 <http://purl.org/goodrelations/validThrough> ?v6 . 
+?v2 <http://schema.org/eligibleQuantity> ?v7 . 
+}

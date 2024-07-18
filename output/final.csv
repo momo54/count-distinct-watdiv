@@ -1,0 +1,201 @@
+query, nbtp,count,countime,var,dv,df,timedv,timedf
+SPO.sparql,1,10916457,0.06946492195129395,o,1005832.0,641.0,178.8253607749939,67.75953483581543
+SPO.sparql,1,10916457,0.06946492195129395,s,521585.0,308.0,116.92363214492798,52.08180093765259
+c6_role0.sparql,2,5264096,18.06692600250244,o,402344.0,222.0,34.039493799209595,21.60726308822632
+C6_role1.sparql,2,2720778,6.4749438762664795,o,204871.0,164.0,12.094146013259888,12.364808082580566
+c6_role2.sparql,2,1851807,19.876948356628418,o,176446.0,135.0,12.224189043045044,8.20875096321106
+c6_role0.sparql,2,5264096,18.06692600250244,s,58629.0,305.0,20.930577754974365,38.13506603240967
+C6_role1.sparql,2,2720778,6.4749438762664795,s,31173.0,295.0,10.160372018814089,12.117546081542969
+c6_pc14.sparql,2,47061,0.17325806617736816,o,22413.0,96.0,0.1623282432556152,0.2941699028015136
+c6_role2.sparql,2,1851807,19.876948356628418,s,21268.0,291.0,12.108550071716309,26.25135612487793
+c6_pc3.sparql,2,36637,0.06949090957641602,o,19934.0,69.0,0.0961217880249023,0.1796050071716308
+c6_pc11.sparql,2,31521,0.16434001922607422,o,15843.0,71.0,0.1199278831481933,0.4336979389190674
+c6_pc5.sparql,2,31190,0.1920490264892578,o,15392.0,69.0,0.1698091030120849,0.2577471733093261
+c6_pc10.sparql,2,30651,0.19310593605041504,o,15258.0,68.0,0.1949970722198486,0.2168257236480713
+Q-10169.sparql,8,391715,1.1291728019714355,v2,14886.0,93.0,1.3289847373962402,2.228801012039185
+c6_pc12.sparql,2,30872,0.1983778476715088,o,14849.0,68.0,0.1567320823669433,0.188040018081665
+Q-1003.sparql,8,211989,0.8561532497406006,v2,14818.0,56.0,0.6709020137786865,1.468350887298584
+c6_pc9.sparql,2,30174,0.13272500038146973,o,14598.0,72.0,0.049713134765625,0.1919770240783691
+Q-10020.sparql,8,7554617,62.55272197723389,v4,11735.0,25.0,107.62063002586363,28.078669786453247
+Q-10025.sparql,12,243150,2.817080020904541,v2,8530.0,23.0,5.676744222640991,27.95124983787537
+Q-10122.sparql,8,1821219,216.41471409797668,v2,7272.0,340.0,16.079905033111572,14.433203220367432
+Q-10122.sparql,8,1821219,216.41471409797668,v3,6346.0,651.0,15.55135703086853,14.712115049362184
+Q-10078.sparql,8,3932428,33.626258850097656,v4,6189.0,25.0,71.25741410255432,30.329659938812256
+Q-10082.sparql,8,2663222,31.43181300163269,v4,4205.0,25.0,43.82090401649475,24.835224866867065
+c6_pc14.sparql,2,47061,0.17325806617736816,s,2586.0,68.0,0.1288759708404541,0.2616572380065918
+c6_pc9.sparql,2,30174,0.13272500038146973,s,1719.0,66.0,0.057751178741455,0.1447088718414306
+c6_pc12.sparql,2,30872,0.1983778476715088,s,1711.0,67.0,0.1629719734191894,0.2157139778137207
+c6_pc5.sparql,2,31190,0.1920490264892578,s,1687.0,65.0,0.1531548500061035,0.1774101257324218
+c6_pc11.sparql,2,31521,0.16434001922607422,s,1686.0,70.0,0.0523457527160644,0.0951070785522461
+c6_pc10.sparql,2,30651,0.19310593605041504,s,1673.0,67.0,0.1251609325408935,0.12095308303833
+c6_pc3.sparql,2,36637,0.06949090957641602,s,1659.0,68.0,0.0994541645050048,0.2396438121795654
+Q-10122.sparql,8,1821219,216.41471409797668,v4,1000.0,830.0,16.380362033843994,14.495114088058472
+Q-10082.sparql,8,2663222,31.43181300163269,v0,858.0,620.0,31.28237795829773,20.82858180999756
+Q-10020.sparql,8,7554617,62.55272197723389,v0,858.0,643.0,33.67358708381653,6.952121734619141
+Q-10078.sparql,8,3932428,33.626258850097656,v0,858.0,645.0,91.4894950389862,25.231568098068237
+Q-10020.sparql,8,7554617,62.55272197723389,v1,680.0,596.0,49.50559115409851,5.71605110168457
+Q-10122.sparql,8,1821219,216.41471409797668,v0,680.0,25.0,23.412484169006348,14.736168146133425
+Q-10082.sparql,8,2663222,31.43181300163269,v1,680.0,563.0,80.23182892799377,28.41091799736023
+Q-10078.sparql,8,3932428,33.626258850097656,v1,680.0,582.0,39.555800676345825,23.10881209373474
+Q-10165.sparql,7,207798,0.5837719440460205,v7,536.0,3.0,0.1696977615356445,0.410693883895874
+Q-10165.sparql,7,207798,0.5837719440460205,v6,206.0,3.0,0.2484071254730224,0.4580850601196289
+Q-10122.sparql,8,1821219,216.41471409797668,v5,171.0,165.0,160.52202701568604,15.30544090270996
+Q-10020.sparql,8,7554617,62.55272197723389,v2,169.0,169.0,56.6814329624176,7.91032600402832
+Q-10082.sparql,8,2663222,31.43181300163269,v2,169.0,169.0,49.27266311645508,29.928148984909058
+Q-10078.sparql,8,3932428,33.626258850097656,v2,169.0,169.0,48.47658896446228,19.885574102401733
+Q-10169.sparql,8,391715,1.1291728019714355,v1,122.0,117.0,1.0986328125,2.2101409435272217
+Q-10122.sparql,8,1821219,216.41471409797668,v6,121.0,120.0,134.22046995162964,15.180709838867188
+Q-10082.sparql,8,2663222,31.43181300163269,v3,119.0,119.0,56.929872035980225,19.08128595352173
+Q-10020.sparql,8,7554617,62.55272197723389,v3,119.0,119.0,59.62731122970581,9.92255926132202
+Q-10078.sparql,8,3932428,33.626258850097656,v3,119.0,119.0,42.28545689582825,21.474490880966187
+Q-1003.sparql,8,211989,0.8561532497406006,v1,111.0,100.0,1.2627449035644531,1.145097017288208
+SPO.sparql,1,10916457,0.06946492195129395,p,86.0,74.0,129.9753270149231,58.18430995941162
+Q-10020.sparql,8,7554617,62.55272197723389,v8,70.0,70.0,82.03680896759033,9.512648105621338
+Q-10078.sparql,8,3932428,33.626258850097656,v8,70.0,70.0,46.34526705741882,9.369749069213867
+Q-10082.sparql,8,2663222,31.43181300163269,v8,70.0,70.0,42.64828705787659,22.22403621673584
+Q-10169.sparql,8,391715,1.1291728019714355,v8,68.0,17.0,0.8516299724578857,1.6650989055633545
+Q-10169.sparql,8,391715,1.1291728019714355,v4,36.0,33.0,1.744330883026123,1.2468490600585938
+Q-1003.sparql,8,211989,0.8561532497406006,v4,36.0,32.0,1.6052958965301514,1.4762029647827148
+Q-1003.sparql,8,211989,0.8561532497406006,v8,32.0,13.0,0.7243766784667969,1.3550450801849363
+Q-10020.sparql,8,7554617,62.55272197723389,v7,25.0,25.0,38.327911138534546,7.327944993972778
+Q-10082.sparql,8,2663222,31.43181300163269,v7,25.0,25.0,63.626420974731445,24.388224124908447
+Q-10122.sparql,8,1821219,216.41471409797668,v8,25.0,25.0,105.50732421875,14.706475019454956
+Q-10078.sparql,8,3932428,33.626258850097656,v7,25.0,25.0,61.117764949798584,28.92239785194397
+Q-10025.sparql,12,243150,2.817080020904541,v1,21.0,18.0,3.496774911880493,4.2569899559021
+c6_pc3.sparql,2,36637,0.06949090957641602,p,19.0,16.0,0.1047103404998779,0.1174149513244628
+C6_role1.sparql,2,2720778,6.4749438762664795,p,18.0,17.0,9.411717176437378,12.178104877471924
+c6_role0.sparql,2,5264096,18.06692600250244,p,18.0,17.0,67.69933700561523,22.38131093978882
+c6_role2.sparql,2,1851807,19.876948356628418,p,18.0,17.0,30.91975688934326,7.682353973388672
+Q-10169.sparql,8,391715,1.1291728019714355,v6,17.0,17.0,1.2370011806488037,2.481579065322876
+Q-10169.sparql,8,391715,1.1291728019714355,v0,17.0,17.0,1.974410057067871,2.2599453926086426
+Q-10169.sparql,8,391715,1.1291728019714355,v7,17.0,17.0,1.7323248386383057,1.2627830505371094
+Q-1003.sparql,8,211989,0.8561532497406006,v0,13.0,13.0,0.8749830722808838,1.2454781532287598
+c6_pc12.sparql,2,30872,0.1983778476715088,p,13.0,12.0,0.1060779094696044,0.2190260887145996
+c6_pc11.sparql,2,31521,0.16434001922607422,p,13.0,12.0,0.0811841487884521,0.1029360294342041
+Q-1003.sparql,8,211989,0.8561532497406006,v6,13.0,13.0,1.2655339241027832,1.2166950702667236
+Q-1003.sparql,8,211989,0.8561532497406006,v7,13.0,13.0,1.1015057563781738,1.306746244430542
+c6_pc14.sparql,2,47061,0.17325806617736816,p,13.0,12.0,0.112955093383789,0.1855149269104004
+c6_pc9.sparql,2,30174,0.13272500038146973,p,13.0,12.0,0.0641648769378662,0.1316649913787841
+c6_pc10.sparql,2,30651,0.19310593605041504,p,13.0,12.0,0.1673758029937744,0.1945881843566894
+c6_pc5.sparql,2,31190,0.1920490264892578,p,13.0,12.0,0.1422779560089111,0.1250302791595459
+Q-10025.sparql,12,243150,2.817080020904541,v8,12.0,2.0,3.365036725997925,6.626260995864868
+Q-10025.sparql,12,243150,2.817080020904541,v6,12.0,2.0,2.896111249923706,15.365814685821531
+Q-10025.sparql,12,243150,2.817080020904541,v4,12.0,2.0,4.07238507270813,3.892969846725464
+Q-10025.sparql,12,243150,2.817080020904541,v7,12.0,2.0,5.319613933563232,5.515283107757568
+Q-10169.sparql,8,391715,1.1291728019714355,v5,9.0,9.0,1.8404271602630615,2.116429090499878
+Q-10078.sparql,8,3932428,33.626258850097656,v6,9.0,9.0,30.826270818710327,21.916306018829346
+Q-10082.sparql,8,2663222,31.43181300163269,v6,9.0,9.0,44.47688889503479,20.729496002197266
+Q-10020.sparql,8,7554617,62.55272197723389,v6,9.0,9.0,76.70600199699402,16.561710834503174
+Q-10122.sparql,8,1821219,216.41471409797668,v7,9.0,9.0,47.4971079826355,15.101964950561523
+Q-1003.sparql,8,211989,0.8561532497406006,v5,8.0,8.0,1.0558860301971436,1.4951167106628418
+Q-10165.sparql,7,207798,0.5837719440460205,v5,7.0,5.0,0.1224408149719238,0.3971219062805176
+Q-10025.sparql,12,243150,2.817080020904541,v5,7.0,3.0,4.415056943893433,3.0865800380706787
+Q-10025.sparql,12,243150,2.817080020904541,v12,6.0,2.0,6.105148077011108,5.6189680099487305
+Q-10165.sparql,7,207798,0.5837719440460205,v1,4.0,4.0,0.0977699756622314,0.4414210319519043
+Q-10165.sparql,7,207798,0.5837719440460205,v4,4.0,4.0,0.2638130187988281,0.3727128505706787
+Q-10165.sparql,7,207798,0.5837719440460205,v0,4.0,4.0,0.1021742820739746,0.3621649742126465
+Q-10165.sparql,7,207798,0.5837719440460205,v3,4.0,4.0,0.2458178997039795,0.2303330898284912
+Q-10025.sparql,12,243150,2.817080020904541,v9,2.0,2.0,3.1306912899017334,3.904263973236084
+Q-10025.sparql,12,243150,2.817080020904541,v10,2.0,2.0,5.310614824295044,4.137880802154541
+Q-10025.sparql,12,243150,2.817080020904541,v11,2.0,2.0,4.235980033874512,7.310288906097412
+Q-10025.sparql,12,243150,2.817080020904541,v0,2.0,2.0,4.626017093658447,7.6749560832977295
+data:{'head': {'vars': ['cdo']}, 'results': {'bindings': [{'cdo': {'datatype': 'http://www.w3.org/2001/XMLSchema#integer', 'type': 'literal', 'value': '1005832'}}]}}, time:178.8253607749939,,,,
+data:{'head': {'vars': ['cdp']}, 'results': {'bindings': [{'cdp': {'datatype': 'http://www.w3.org/2001/XMLSchema#integer', 'type': 'literal', 'value': '86'}}]}}, time:129.9753270149231,,,,
+data:{'head': {'vars': ['cds']}, 'results': {'bindings': [{'cds': {'datatype': 'http://www.w3.org/2001/XMLSchema#integer', 'type': 'literal', 'value': '521585'}}]}}, time:116.92363214492798,,,,
+data:{'head': {'vars': ['cdp']}, 'results': {'bindings': [{'cdp': {'datatype': 'http://www.w3.org/2001/XMLSchema#integer', 'type': 'literal', 'value': '18'}}]}}, time:9.411717176437378,,,,
+data:{'head': {'vars': ['cds']}, 'results': {'bindings': [{'cds': {'datatype': 'http://www.w3.org/2001/XMLSchema#integer', 'type': 'literal', 'value': '31173'}}]}}, time:10.160372018814087,,,,
+data:{'head': {'vars': ['cdo']}, 'results': {'bindings': [{'cdo': {'datatype': 'http://www.w3.org/2001/XMLSchema#integer', 'type': 'literal', 'value': '204871'}}]}}, time:12.094146013259888,,,,
+data:{'head': {'vars': ['cdo']}, 'results': {'bindings': [{'cdo': {'datatype': 'http://www.w3.org/2001/XMLSchema#integer', 'type': 'literal', 'value': '15392'}}]}}, time:0.16980910301208496,,,,
+data:{'head': {'vars': ['cds']}, 'results': {'bindings': [{'cds': {'datatype': 'http://www.w3.org/2001/XMLSchema#integer', 'type': 'literal', 'value': '1687'}}]}}, time:0.15315485000610352,,,,
+data:{'head': {'vars': ['cdp']}, 'results': {'bindings': [{'cdp': {'datatype': 'http://www.w3.org/2001/XMLSchema#integer', 'type': 'literal', 'value': '13'}}]}}, time:0.14227795600891113,,,,
+data:{'head': {'vars': ['cdv4']}, 'results': {'bindings': [{'cdv4': {'datatype': 'http://www.w3.org/2001/XMLSchema#integer', 'type': 'literal', 'value': '11735'}}]}}, time:107.62063002586365,,,,
+data:{'head': {'vars': ['cdv6']}, 'results': {'bindings': [{'cdv6': {'datatype': 'http://www.w3.org/2001/XMLSchema#integer', 'type': 'literal', 'value': '9'}}]}}, time:76.70600199699402,,,,
+data:{'head': {'vars': ['cdv8']}, 'results': {'bindings': [{'cdv8': {'datatype': 'http://www.w3.org/2001/XMLSchema#integer', 'type': 'literal', 'value': '70'}}]}}, time:82.03680896759033,,,,
+data:{'head': {'vars': ['cdv2']}, 'results': {'bindings': [{'cdv2': {'datatype': 'http://www.w3.org/2001/XMLSchema#integer', 'type': 'literal', 'value': '169'}}]}}, time:56.6814329624176,,,,
+data:{'head': {'vars': ['cdv3']}, 'results': {'bindings': [{'cdv3': {'datatype': 'http://www.w3.org/2001/XMLSchema#integer', 'type': 'literal', 'value': '119'}}]}}, time:59.62731122970581,,,,
+data:{'head': {'vars': ['cdv1']}, 'results': {'bindings': [{'cdv1': {'datatype': 'http://www.w3.org/2001/XMLSchema#integer', 'type': 'literal', 'value': '680'}}]}}, time:49.50559115409851,,,,
+data:{'head': {'vars': ['cdv0']}, 'results': {'bindings': [{'cdv0': {'datatype': 'http://www.w3.org/2001/XMLSchema#integer', 'type': 'literal', 'value': '858'}}]}}, time:33.67358708381653,,,,
+data:{'head': {'vars': ['cdv7']}, 'results': {'bindings': [{'cdv7': {'datatype': 'http://www.w3.org/2001/XMLSchema#integer', 'type': 'literal', 'value': '25'}}]}}, time:38.327911138534546,,,,
+data:{'head': {'vars': ['cds']}, 'results': {'bindings': [{'cds': {'datatype': 'http://www.w3.org/2001/XMLSchema#integer', 'type': 'literal', 'value': '1719'}}]}}, time:0.05775117874145508,,,,
+data:{'head': {'vars': ['cdp']}, 'results': {'bindings': [{'cdp': {'datatype': 'http://www.w3.org/2001/XMLSchema#integer', 'type': 'literal', 'value': '13'}}]}}, time:0.06416487693786621,,,,
+data:{'head': {'vars': ['cdo']}, 'results': {'bindings': [{'cdo': {'datatype': 'http://www.w3.org/2001/XMLSchema#integer', 'type': 'literal', 'value': '14598'}}]}}, time:0.049713134765625,,,,
+data:{'head': {'vars': ['cdv1']}, 'results': {'bindings': [{'cdv1': {'datatype': 'http://www.w3.org/2001/XMLSchema#integer', 'type': 'literal', 'value': '122'}}]}}, time:1.0986328125,,,,
+data:{'head': {'vars': ['cdv6']}, 'results': {'bindings': [{'cdv6': {'datatype': 'http://www.w3.org/2001/XMLSchema#integer', 'type': 'literal', 'value': '17'}}]}}, time:1.2370011806488037,,,,
+data:{'head': {'vars': ['cdv8']}, 'results': {'bindings': [{'cdv8': {'datatype': 'http://www.w3.org/2001/XMLSchema#integer', 'type': 'literal', 'value': '68'}}]}}, time:0.8516299724578857,,,,
+data:{'head': {'vars': ['cdv2']}, 'results': {'bindings': [{'cdv2': {'datatype': 'http://www.w3.org/2001/XMLSchema#integer', 'type': 'literal', 'value': '14886'}}]}}, time:1.3289847373962402,,,,
+data:{'head': {'vars': ['cdv5']}, 'results': {'bindings': [{'cdv5': {'datatype': 'http://www.w3.org/2001/XMLSchema#integer', 'type': 'literal', 'value': '9'}}]}}, time:1.8404271602630615,,,,
+data:{'head': {'vars': ['cdv0']}, 'results': {'bindings': [{'cdv0': {'datatype': 'http://www.w3.org/2001/XMLSchema#integer', 'type': 'literal', 'value': '17'}}]}}, time:1.974410057067871,,,,
+data:{'head': {'vars': ['cdv4']}, 'results': {'bindings': [{'cdv4': {'datatype': 'http://www.w3.org/2001/XMLSchema#integer', 'type': 'literal', 'value': '36'}}]}}, time:1.744330883026123,,,,
+data:{'head': {'vars': ['cdv7']}, 'results': {'bindings': [{'cdv7': {'datatype': 'http://www.w3.org/2001/XMLSchema#integer', 'type': 'literal', 'value': '17'}}]}}, time:1.7323248386383057,,,,
+data:{'head': {'vars': ['cdv2']}, 'results': {'bindings': [{'cdv2': {'datatype': 'http://www.w3.org/2001/XMLSchema#integer', 'type': 'literal', 'value': '14818'}}]}}, time:0.6709020137786865,,,,
+data:{'head': {'vars': ['cdv0']}, 'results': {'bindings': [{'cdv0': {'datatype': 'http://www.w3.org/2001/XMLSchema#integer', 'type': 'literal', 'value': '13'}}]}}, time:0.8749830722808838,,,,
+data:{'head': {'vars': ['cdv1']}, 'results': {'bindings': [{'cdv1': {'datatype': 'http://www.w3.org/2001/XMLSchema#integer', 'type': 'literal', 'value': '111'}}]}}, time:1.2627449035644531,,,,
+data:{'head': {'vars': ['cdv8']}, 'results': {'bindings': [{'cdv8': {'datatype': 'http://www.w3.org/2001/XMLSchema#integer', 'type': 'literal', 'value': '32'}}]}}, time:0.7243766784667969,,,,
+data:{'head': {'vars': ['cdv4']}, 'results': {'bindings': [{'cdv4': {'datatype': 'http://www.w3.org/2001/XMLSchema#integer', 'type': 'literal', 'value': '36'}}]}}, time:1.6052958965301514,,,,
+data:{'head': {'vars': ['cdv5']}, 'results': {'bindings': [{'cdv5': {'datatype': 'http://www.w3.org/2001/XMLSchema#integer', 'type': 'literal', 'value': '8'}}]}}, time:1.0558860301971436,,,,
+data:{'head': {'vars': ['cdv7']}, 'results': {'bindings': [{'cdv7': {'datatype': 'http://www.w3.org/2001/XMLSchema#integer', 'type': 'literal', 'value': '13'}}]}}, time:1.1015057563781738,,,,
+data:{'head': {'vars': ['cdv6']}, 'results': {'bindings': [{'cdv6': {'datatype': 'http://www.w3.org/2001/XMLSchema#integer', 'type': 'literal', 'value': '13'}}]}}, time:1.2655339241027832,,,,
+data:{'head': {'vars': ['cdv6']}, 'results': {'bindings': [{'cdv6': {'datatype': 'http://www.w3.org/2001/XMLSchema#integer', 'type': 'literal', 'value': '206'}}]}}, time:0.24840712547302246,,,,
+data:{'head': {'vars': ['cdv1']}, 'results': {'bindings': [{'cdv1': {'datatype': 'http://www.w3.org/2001/XMLSchema#integer', 'type': 'literal', 'value': '4'}}]}}, time:0.09776997566223145,,,,
+data:{'head': {'vars': ['cdv7']}, 'results': {'bindings': [{'cdv7': {'datatype': 'http://www.w3.org/2001/XMLSchema#integer', 'type': 'literal', 'value': '536'}}]}}, time:0.16969776153564453,,,,
+data:{'head': {'vars': ['cdv5']}, 'results': {'bindings': [{'cdv5': {'datatype': 'http://www.w3.org/2001/XMLSchema#integer', 'type': 'literal', 'value': '7'}}]}}, time:0.12244081497192383,,,,
+data:{'head': {'vars': ['cdv4']}, 'results': {'bindings': [{'cdv4': {'datatype': 'http://www.w3.org/2001/XMLSchema#integer', 'type': 'literal', 'value': '4'}}]}}, time:0.2638130187988281,,,,
+data:{'head': {'vars': ['cdv0']}, 'results': {'bindings': [{'cdv0': {'datatype': 'http://www.w3.org/2001/XMLSchema#integer', 'type': 'literal', 'value': '4'}}]}}, time:0.10217428207397461,,,,
+data:{'head': {'vars': ['cdv3']}, 'results': {'bindings': [{'cdv3': {'datatype': 'http://www.w3.org/2001/XMLSchema#integer', 'type': 'literal', 'value': '4'}}]}}, time:0.2458178997039795,,,,
+data:{'head': {'vars': ['cdv5']}, 'results': {'bindings': [{'cdv5': {'datatype': 'http://www.w3.org/2001/XMLSchema#integer', 'type': 'literal', 'value': '171'}}]}}, time:160.52202701568604,,,,
+data:{'head': {'vars': ['cdv6']}, 'results': {'bindings': [{'cdv6': {'datatype': 'http://www.w3.org/2001/XMLSchema#integer', 'type': 'literal', 'value': '121'}}]}}, time:134.22046995162964,,,,
+data:{'head': {'vars': ['cdv8']}, 'results': {'bindings': [{'cdv8': {'datatype': 'http://www.w3.org/2001/XMLSchema#integer', 'type': 'literal', 'value': '25'}}]}}, time:105.50732421875,,,,
+data:{'head': {'vars': ['cdv7']}, 'results': {'bindings': [{'cdv7': {'datatype': 'http://www.w3.org/2001/XMLSchema#integer', 'type': 'literal', 'value': '9'}}]}}, time:47.4971079826355,,,,
+data:{'head': {'vars': ['cdv0']}, 'results': {'bindings': [{'cdv0': {'datatype': 'http://www.w3.org/2001/XMLSchema#integer', 'type': 'literal', 'value': '680'}}]}}, time:23.412484169006348,,,,
+data:{'head': {'vars': ['cdv2']}, 'results': {'bindings': [{'cdv2': {'datatype': 'http://www.w3.org/2001/XMLSchema#integer', 'type': 'literal', 'value': '7272'}}]}}, time:16.079905033111572,,,,
+data:{'head': {'vars': ['cdv4']}, 'results': {'bindings': [{'cdv4': {'datatype': 'http://www.w3.org/2001/XMLSchema#integer', 'type': 'literal', 'value': '1000'}}]}}, time:16.380362033843994,,,,
+data:{'head': {'vars': ['cdv3']}, 'results': {'bindings': [{'cdv3': {'datatype': 'http://www.w3.org/2001/XMLSchema#integer', 'type': 'literal', 'value': '6346'}}]}}, time:15.55135703086853,,,,
+data:{'head': {'vars': ['cdp']}, 'results': {'bindings': [{'cdp': {'datatype': 'http://www.w3.org/2001/XMLSchema#integer', 'type': 'literal', 'value': '19'}}]}}, time:0.10471034049987793,,,,
+data:{'head': {'vars': ['cds']}, 'results': {'bindings': [{'cds': {'datatype': 'http://www.w3.org/2001/XMLSchema#integer', 'type': 'literal', 'value': '1659'}}]}}, time:0.09945416450500488,,,,
+data:{'head': {'vars': ['cdo']}, 'results': {'bindings': [{'cdo': {'datatype': 'http://www.w3.org/2001/XMLSchema#integer', 'type': 'literal', 'value': '19934'}}]}}, time:0.09612178802490234,,,,
+data:{'head': {'vars': ['cdo']}, 'results': {'bindings': [{'cdo': {'datatype': 'http://www.w3.org/2001/XMLSchema#integer', 'type': 'literal', 'value': '15843'}}]}}, time:0.11992788314819336,,,,
+data:{'head': {'vars': ['cds']}, 'results': {'bindings': [{'cds': {'datatype': 'http://www.w3.org/2001/XMLSchema#integer', 'type': 'literal', 'value': '1686'}}]}}, time:0.05234575271606445,,,,
+data:{'head': {'vars': ['cdp']}, 'results': {'bindings': [{'cdp': {'datatype': 'http://www.w3.org/2001/XMLSchema#integer', 'type': 'literal', 'value': '13'}}]}}, time:0.08118414878845215,,,,
+data:{'head': {'vars': ['cdv4']}, 'results': {'bindings': [{'cdv4': {'datatype': 'http://www.w3.org/2001/XMLSchema#integer', 'type': 'literal', 'value': '4205'}}]}}, time:43.82090401649475,,,,
+data:{'head': {'vars': ['cdv1']}, 'results': {'bindings': [{'cdv1': {'datatype': 'http://www.w3.org/2001/XMLSchema#integer', 'type': 'literal', 'value': '680'}}]}}, time:80.23182892799377,,,,
+data:{'head': {'vars': ['cdv7']}, 'results': {'bindings': [{'cdv7': {'datatype': 'http://www.w3.org/2001/XMLSchema#integer', 'type': 'literal', 'value': '25'}}]}}, time:63.626420974731445,,,,
+data:{'head': {'vars': ['cdv0']}, 'results': {'bindings': [{'cdv0': {'datatype': 'http://www.w3.org/2001/XMLSchema#integer', 'type': 'literal', 'value': '858'}}]}}, time:31.28237795829773,,,,
+data:{'head': {'vars': ['cdv6']}, 'results': {'bindings': [{'cdv6': {'datatype': 'http://www.w3.org/2001/XMLSchema#integer', 'type': 'literal', 'value': '9'}}]}}, time:44.47688889503479,,,,
+data:{'head': {'vars': ['cdv2']}, 'results': {'bindings': [{'cdv2': {'datatype': 'http://www.w3.org/2001/XMLSchema#integer', 'type': 'literal', 'value': '169'}}]}}, time:49.27266311645508,,,,
+data:{'head': {'vars': ['cdv8']}, 'results': {'bindings': [{'cdv8': {'datatype': 'http://www.w3.org/2001/XMLSchema#integer', 'type': 'literal', 'value': '70'}}]}}, time:42.64828705787659,,,,
+data:{'head': {'vars': ['cdv3']}, 'results': {'bindings': [{'cdv3': {'datatype': 'http://www.w3.org/2001/XMLSchema#integer', 'type': 'literal', 'value': '119'}}]}}, time:56.929872035980225,,,,
+data:{'head': {'vars': ['cdv7']}, 'results': {'bindings': [{'cdv7': {'datatype': 'http://www.w3.org/2001/XMLSchema#integer', 'type': 'literal', 'value': '25'}}]}}, time:61.117764949798584,,,,
+data:{'head': {'vars': ['cdv0']}, 'results': {'bindings': [{'cdv0': {'datatype': 'http://www.w3.org/2001/XMLSchema#integer', 'type': 'literal', 'value': '858'}}]}}, time:91.4894950389862,,,,
+data:{'head': {'vars': ['cdv3']}, 'results': {'bindings': [{'cdv3': {'datatype': 'http://www.w3.org/2001/XMLSchema#integer', 'type': 'literal', 'value': '119'}}]}}, time:42.28545689582825,,,,
+data:{'head': {'vars': ['cdv6']}, 'results': {'bindings': [{'cdv6': {'datatype': 'http://www.w3.org/2001/XMLSchema#integer', 'type': 'literal', 'value': '9'}}]}}, time:30.826270818710327,,,,
+data:{'head': {'vars': ['cdv4']}, 'results': {'bindings': [{'cdv4': {'datatype': 'http://www.w3.org/2001/XMLSchema#integer', 'type': 'literal', 'value': '6189'}}]}}, time:71.25741410255432,,,,
+data:{'head': {'vars': ['cdv1']}, 'results': {'bindings': [{'cdv1': {'datatype': 'http://www.w3.org/2001/XMLSchema#integer', 'type': 'literal', 'value': '680'}}]}}, time:39.555800676345825,,,,
+data:{'head': {'vars': ['cdv2']}, 'results': {'bindings': [{'cdv2': {'datatype': 'http://www.w3.org/2001/XMLSchema#integer', 'type': 'literal', 'value': '169'}}]}}, time:48.47658896446228,,,,
+data:{'head': {'vars': ['cdv8']}, 'results': {'bindings': [{'cdv8': {'datatype': 'http://www.w3.org/2001/XMLSchema#integer', 'type': 'literal', 'value': '70'}}]}}, time:46.34526705741882,,,,
+data:{'head': {'vars': ['cds']}, 'results': {'bindings': [{'cds': {'datatype': 'http://www.w3.org/2001/XMLSchema#integer', 'type': 'literal', 'value': '58629'}}]}}, time:20.930577754974365,,,,
+data:{'head': {'vars': ['cdo']}, 'results': {'bindings': [{'cdo': {'datatype': 'http://www.w3.org/2001/XMLSchema#integer', 'type': 'literal', 'value': '402344'}}]}}, time:34.039493799209595,,,,
+data:{'head': {'vars': ['cdp']}, 'results': {'bindings': [{'cdp': {'datatype': 'http://www.w3.org/2001/XMLSchema#integer', 'type': 'literal', 'value': '18'}}]}}, time:67.69933700561523,,,,
+data:{'head': {'vars': ['cdo']}, 'results': {'bindings': [{'cdo': {'datatype': 'http://www.w3.org/2001/XMLSchema#integer', 'type': 'literal', 'value': '176446'}}]}}, time:12.224189043045044,,,,
+data:{'head': {'vars': ['cds']}, 'results': {'bindings': [{'cds': {'datatype': 'http://www.w3.org/2001/XMLSchema#integer', 'type': 'literal', 'value': '21268'}}]}}, time:12.108550071716309,,,,
+data:{'head': {'vars': ['cdp']}, 'results': {'bindings': [{'cdp': {'datatype': 'http://www.w3.org/2001/XMLSchema#integer', 'type': 'literal', 'value': '18'}}]}}, time:30.91975688934326,,,,
+data:{'head': {'vars': ['cds']}, 'results': {'bindings': [{'cds': {'datatype': 'http://www.w3.org/2001/XMLSchema#integer', 'type': 'literal', 'value': '2586'}}]}}, time:0.1288759708404541,,,,
+data:{'head': {'vars': ['cdp']}, 'results': {'bindings': [{'cdp': {'datatype': 'http://www.w3.org/2001/XMLSchema#integer', 'type': 'literal', 'value': '13'}}]}}, time:0.11295509338378906,,,,
+data:{'head': {'vars': ['cdo']}, 'results': {'bindings': [{'cdo': {'datatype': 'http://www.w3.org/2001/XMLSchema#integer', 'type': 'literal', 'value': '22413'}}]}}, time:0.16232824325561523,,,,
+data:{'head': {'vars': ['cdp']}, 'results': {'bindings': [{'cdp': {'datatype': 'http://www.w3.org/2001/XMLSchema#integer', 'type': 'literal', 'value': '13'}}]}}, time:0.16737580299377441,,,,
+data:{'head': {'vars': ['cdo']}, 'results': {'bindings': [{'cdo': {'datatype': 'http://www.w3.org/2001/XMLSchema#integer', 'type': 'literal', 'value': '15258'}}]}}, time:0.19499707221984863,,,,
+data:{'head': {'vars': ['cds']}, 'results': {'bindings': [{'cds': {'datatype': 'http://www.w3.org/2001/XMLSchema#integer', 'type': 'literal', 'value': '1673'}}]}}, time:0.12516093254089355,,,,
+data:{'head': {'vars': ['cdp']}, 'results': {'bindings': [{'cdp': {'datatype': 'http://www.w3.org/2001/XMLSchema#integer', 'type': 'literal', 'value': '13'}}]}}, time:0.10607790946960449,,,,
+data:{'head': {'vars': ['cdo']}, 'results': {'bindings': [{'cdo': {'datatype': 'http://www.w3.org/2001/XMLSchema#integer', 'type': 'literal', 'value': '14849'}}]}}, time:0.15673208236694336,,,,
+data:{'head': {'vars': ['cds']}, 'results': {'bindings': [{'cds': {'datatype': 'http://www.w3.org/2001/XMLSchema#integer', 'type': 'literal', 'value': '1711'}}]}}, time:0.16297197341918945,,,,
+data:{'head': {'vars': ['cdv9']}, 'results': {'bindings': [{'cdv9': {'datatype': 'http://www.w3.org/2001/XMLSchema#integer', 'type': 'literal', 'value': '2'}}]}}, time:3.1306912899017334,,,,
+data:{'head': {'vars': ['cdv7']}, 'results': {'bindings': [{'cdv7': {'datatype': 'http://www.w3.org/2001/XMLSchema#integer', 'type': 'literal', 'value': '12'}}]}}, time:5.319613933563232,,,,
+data:{'head': {'vars': ['cdv10']}, 'results': {'bindings': [{'cdv10': {'datatype': 'http://www.w3.org/2001/XMLSchema#integer', 'type': 'literal', 'value': '2'}}]}}, time:5.310614824295044,,,,
+data:{'head': {'vars': ['cdv4']}, 'results': {'bindings': [{'cdv4': {'datatype': 'http://www.w3.org/2001/XMLSchema#integer', 'type': 'literal', 'value': '12'}}]}}, time:4.07238507270813,,,,
+data:{'head': {'vars': ['cdv5']}, 'results': {'bindings': [{'cdv5': {'datatype': 'http://www.w3.org/2001/XMLSchema#integer', 'type': 'literal', 'value': '7'}}]}}, time:4.415056943893433,,,,
+data:{'head': {'vars': ['cdv1']}, 'results': {'bindings': [{'cdv1': {'datatype': 'http://www.w3.org/2001/XMLSchema#integer', 'type': 'literal', 'value': '21'}}]}}, time:3.496774911880493,,,,
+data:{'head': {'vars': ['cdv6']}, 'results': {'bindings': [{'cdv6': {'datatype': 'http://www.w3.org/2001/XMLSchema#integer', 'type': 'literal', 'value': '12'}}]}}, time:2.896111249923706,,,,
+data:{'head': {'vars': ['cdv8']}, 'results': {'bindings': [{'cdv8': {'datatype': 'http://www.w3.org/2001/XMLSchema#integer', 'type': 'literal', 'value': '12'}}]}}, time:3.365036725997925,,,,
+data:{'head': {'vars': ['cdv11']}, 'results': {'bindings': [{'cdv11': {'datatype': 'http://www.w3.org/2001/XMLSchema#integer', 'type': 'literal', 'value': '2'}}]}}, time:4.235980033874512,,,,
+data:{'head': {'vars': ['cdv0']}, 'results': {'bindings': [{'cdv0': {'datatype': 'http://www.w3.org/2001/XMLSchema#integer', 'type': 'literal', 'value': '2'}}]}}, time:4.626017093658447,,,,
+data:{'head': {'vars': ['cdv2']}, 'results': {'bindings': [{'cdv2': {'datatype': 'http://www.w3.org/2001/XMLSchema#integer', 'type': 'literal', 'value': '8530'}}]}}, time:5.676744222640991,,,,
+data:{'head': {'vars': ['cdv12']}, 'results': {'bindings': [{'cdv12': {'datatype': 'http://www.w3.org/2001/XMLSchema#integer', 'type': 'literal', 'value': '6'}}]}}, time:6.105148077011108,,,,

@@ -1,0 +1,4 @@
+select (COUNT(DISTINCT ?s) as ?cds) WHERE {
+?s <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://db.uwaterloo.ca/~galuc/wsdbm/ProductCategory11> . 
+?s ?p ?o . 
+}
