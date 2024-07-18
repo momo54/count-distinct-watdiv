@@ -12,7 +12,7 @@ from scripts.sparql_rewrite import get_nbtp
 # Directory for input SPARQL files
 QUERY_DIR = "/Users/molli-p/count-distinct-watdiv/output/selected_queries"
 QUERY_FILES = [os.path.splitext(f)[0] for f in os.listdir(QUERY_DIR) if f.endswith(".sparql")]
-RESULT_DIR = "/Users/molli-p/count-distinct-watdiv/output/CRAWD"
+RESULT_DIR = "/Users/molli-p/count-distinct-watdiv/output/CHAOLEE"
 
 # Not sure what it does...
 #include: "../scripts/sparql_rewrite.py" 
@@ -64,7 +64,7 @@ rule run_sparql_query:
                 -Dexec.args="\
                 --database=/Users/molli-p/count-distinct-watdiv/data/blazegraph.jnl \
                 --file={input.query_file} \
-                --limit={limit} \
+                --limit={limit} --chao-lee \
                 -sl={sl}\
                 --threads=1 -n=5\
                 --report" \
