@@ -1,0 +1,11 @@
+{
+  "config1": {"limit": 10000, "sl": 1},
+  "config2": {"limit": 100000, "sl": 1},
+  "config3": {"limit": 1000000, "sl": 1},
+  "config4": {"limit": 10000, "sl": 10},
+  "config5": {"limit": 100000, "sl": 10},
+  "config6": {"limit": 1000000, "sl": 10},
+  "config7": {"limit": 10000, "sl": 100},
+  "config8": {"limit": 100000, "sl": 100},
+  "config9": {"limit": 1000000, "sl": 100}
+}
