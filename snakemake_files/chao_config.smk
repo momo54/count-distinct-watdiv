@@ -10,14 +10,15 @@ import rdflib
 from scripts.sparql_rewrite import get_nbtp
 
 # Directory for input SPARQL files
-QUERY_DIR = "/Users/molli-p/count-distinct-watdiv/output/selected_queries"
+ROOT="/GDD/count-distinct-watdiv"
+QUERY_DIR = f"{ROOT}/output/selected_queries"
 QUERY_FILES = [os.path.splitext(f)[0] for f in os.listdir(QUERY_DIR) if f.endswith(".sparql")]
-RESULT_DIR = "/Users/molli-p/count-distinct-watdiv/output/CHAOLEE"
+RESULT_DIR = f"{ROOT}/output/CHAOLEE"
 
 # Not sure what it does...
 #include: "../scripts/sparql_rewrite.py" 
 
-with open("/Users/molli-p/count-distinct-watdiv/config-exp.json") as f1:
+with open(f"{ROOT}/config-exp.json") as f1:
     CONFIG = json.load(f1)
 
 rule all:
@@ -39,7 +40,7 @@ rule prepare_result_directories:
 rule run_sparql_query:
     input:
         query_file=f"{QUERY_DIR}/{{query}}.sparql",
-        config_file="/Users/molli-p/count-distinct-watdiv/config-exp.json"
+        config_file=f"{ROOT}/config-exp.json"
     output:
         f"{RESULT_DIR}/{{config}}/{{query}}.result"
     run:
@@ -54,15 +55,15 @@ rule run_sparql_query:
         result_dir = f"{RESULT_DIR}/{wildcards.config}"
 
         # shell("""
-        #     cd /Users/molli-p/count-distinct-watdiv/sage-jena
+        #     cd {ROOT}/sage-jena
         #     echo $(pwd)  > {output}
         #     """)
 
-        shell("""
-            cd  /Users/molli-p/count-distinct-watdiv/sage-jena
+        shell(f"""
+            cd {ROOT}/sage-jena
             mvn exec:java -pl rawer \
                 -Dexec.args="\
-                --database=/Users/molli-p/count-distinct-watdiv/data/blazegraph.jnl \
+                --database={ROOT}/watdiv10M-clone.jnl \
                 --file={input.query_file} \
                 --limit={limit} --chao-lee \
                 -sl={sl}\
