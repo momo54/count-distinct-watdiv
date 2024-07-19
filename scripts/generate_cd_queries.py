@@ -37,13 +37,17 @@ def gen_query(var,query_name,query_dir):
 
 def generate_watdiv(path,query_dir):
     df = pd.read_csv(path)
+    print(",".join(df.columns.tolist()))
     df.sort_values(by='dv', ascending=False,inplace=True)
     for index, row in df.head(30).iterrows():
         var = row['var']
         query_name = row['query']
 
         gen_query(var,query_name,query_dir)
+        row['query']=row['query'].split('.')[0]+"_"+var
+        print(",".join(row.astype(str).tolist()))
         # Your code here to process var and query_name
 
 if __name__ == "__main__":
+    # python scripts/generate_cd_queries.py > output/GT.csv
     generate_watdiv("output/final.csv","queries/cd_watdiv")
