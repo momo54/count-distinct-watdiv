@@ -10,7 +10,7 @@ import rdflib
 from scripts.sparql_rewrite import get_nbtp
 
 # Directory for input SPARQL files
-ROOT="/GDD/count-distinct-watdiv"
+ROOT="/Users/molli-p/count-distinct-watdiv"
 QUERY_DIR = f"{ROOT}/output/selected_queries"
 QUERY_FILES = [os.path.splitext(f)[0] for f in os.listdir(QUERY_DIR) if f.endswith(".sparql")]
 RESULT_DIR = f"{ROOT}/output/CHAOLEE"
