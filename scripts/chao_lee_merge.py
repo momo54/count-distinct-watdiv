@@ -62,5 +62,5 @@ def chaolee_merge_results(base_dir):
 
 
 if __name__ == "__main__":
-    ROOT="/Users/molli-p/count-distinct-watdiv"
+    ROOT="/GDD/count-distinct-watdiv"
     chaolee_merge_results(f"{ROOT}/output/CHAOLEE")

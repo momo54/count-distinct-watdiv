@@ -63,7 +63,7 @@ rule run_sparql_query:
             cd {ROOT}/sage-jena
             mvn exec:java -pl rawer \
                 -Dexec.args="\
-                --database={ROOT}/blazegraph.jnl \
+                --database={ROOT}/watdiv10M.jnl \
                 --file={input.query_file} \
                 --limit={limit} \
                 -sl={sl}\
