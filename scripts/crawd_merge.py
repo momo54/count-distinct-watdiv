@@ -57,8 +57,12 @@ def crawd_merge_results(base_dir):
                 print("\n".join(crawd_parse_results(query_file)))
 
 
-
+import sys
 if __name__ == "__main__":
-    # python scripts/crawd_merge.py > output/crawd.csv
-    ROOT="/GDD/count-distinct-watdiv"
-    crawd_merge_results(f"{ROOT}/output/CRAWD")
+    if len(sys.argv) != 2:
+        print("Usage: python crawd_merge.py <crawd-dir>")
+    else:
+        # python scripts/crawd_merge.py > output/crawd.csv
+        #ROOT="/GDD/count-distinct-watdiv"
+        crawd_dir=sys.argv[1]
+        crawd_merge_results(crawd_dir)
