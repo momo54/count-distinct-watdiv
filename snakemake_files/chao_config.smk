@@ -11,9 +11,9 @@ from scripts.sparql_rewrite import get_nbtp
 
 # Directory for input SPARQL files
 ROOT="/Users/molli-p/count-distinct-watdiv"
-QUERY_DIR = f"{ROOT}/output/selected_queries"
+QUERY_DIR = f"{ROOT}/queries/top5_cd_original"
 QUERY_FILES = [os.path.splitext(f)[0] for f in os.listdir(QUERY_DIR) if f.endswith(".sparql")]
-RESULT_DIR = f"{ROOT}/output/CHAOLEE"
+RESULT_DIR = f"{ROOT}/output/CHAOLEE-original"
 
 # Not sure what it does...
 #include: "../scripts/sparql_rewrite.py" 
@@ -59,17 +59,13 @@ rule run_sparql_query:
         #     echo $(pwd)  > {output}
         #     """)
 
-        shell(f"""
+        shell_cmd = f"""
             cd {ROOT}/sage-jena
-            mvn exec:java -pl rawer \
-                -Dexec.args="\
-                --database={ROOT}/watdiv10M-clone.jnl \
-                --file={input.query_file} \
-                --limit={limit} --chao-lee \
-                -sl={sl}\
-                --threads=1 -n=5\
-                --report" \
-                &>  {output}
-           """)
+            mvn exec:java -pl rawer -Dexec.args=" --database={ROOT}/data/blazegraph.jnl --file={input.query_file} --limit={limit} --chao-lee -sl={sl} --threads=1 -n=5 --report" &>  {output}
+           """
+
+        shell(shell_cmd)
+
+
 
 
