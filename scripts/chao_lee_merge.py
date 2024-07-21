@@ -56,7 +56,12 @@ def chaolee_merge_results(base_dir):
                 print("\n".join(chaolee_parse_result(query_file)))
 
 
+import sys
 if __name__ == "__main__":
-    # python scripts/chao_lee_merge.py > output/chao.csv 
-    ROOT="/GDD/count-distinct-watdiv"
-    chaolee_merge_results(f"{ROOT}/output/CHAOLEE")
+    if len(sys.argv) != 2:
+        print("Usage: python crawd_merge.py <crawd-dir>")
+    else:
+        # python scripts/crawd_merge.py > output/crawd.csv
+        #ROOT="/GDD/count-distinct-watdiv"
+        crawd_dir=sys.argv[1]
+        chaolee_merge_results(crawd_dir)
