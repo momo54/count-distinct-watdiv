@@ -70,4 +70,12 @@ rule run_sparql_query:
 
         shell(shell_cmd)
 
+rule crawd_merge_results:
+    input:
+        "output/CRAWD-original"
+    output:
+        "output/crawd.csv"
+    shell:
+        "python scripts/crawd_merge.py {input} > {output}"
 
+    

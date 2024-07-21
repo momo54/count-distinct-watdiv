@@ -1,3 +1,9 @@
+## This is a snakemake file to run the CRAWD experiment with the selected watdiv original queries
+# /opt/homebrew/bin/snakemake -s snakemake_files/crawd_config.smk -c1
+# /opt/homebrew/bin/snakemake -s snakemake_files/crawd_config.smk -c1 output/chao.csv
+# generate result files, that should be parsed and merged to generate the final results
+
+
 import os
 from glob import glob
 from snakemake.utils import validate
@@ -67,5 +73,12 @@ rule run_sparql_query:
         shell(shell_cmd)
 
 
+rule chao_merge_results:
+    input:
+        "output/CHAOLEE-original"
+    output:
+        "output/chao.csv"
+    shell:
+        "python scripts/chao_lee_merge.py {input} > {output}"
 
 
