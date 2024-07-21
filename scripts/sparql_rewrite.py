@@ -37,6 +37,9 @@ SELECT (COUNT(*) as ?count) WHERE {
 '''
 
 
+   
+
+
 def execute_sparql_query(query):
 #    url = "https://query.wikidata.org/sparql"
     url="http://localhost:9999/bigdata/sparql"
@@ -324,7 +327,7 @@ def rewrite_query(query,select,verbose,output):
     for var,query in cd_queries.items():
         logger.debug(f"executing {result['query']}:{query}")
         data,time=execute_sparql_query(query)
-        print(f"data:{data}, time:{time}")
+#        print(f"data:{data}, time:{time}")
         val=data['results']['bindings'][0]['cd'+var[1:]]['value']
         df.loc[len(df)] = [result['query'], result['nbtp'], result['count'],result['counttime'], var[1:], val,0 ,time,0]
 

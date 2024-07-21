@@ -1,3 +1,7 @@
+## This is a snakemake file to run the CRAWD experiment with the selected watdiv original queries
+# /opt/homebrew/bin/snakemake -s snakemake_files/crawd_config.smk -c1
+# generate result files, that should be parsed and merged to generate the final results
+
 import os
 from glob import glob
 from snakemake.utils import validate
@@ -6,14 +10,14 @@ import json
 
 import rdflib
 
-## cannot work
+## carefull : the python of snakemake is maybe not the same as the one used by the system
 from scripts.sparql_rewrite import get_nbtp
 
 # Directory for input SPARQL files
-ROOT="/GDD/count-distinct-watdiv"
-QUERY_DIR = f"{ROOT}/output/selected_queries"
+ROOT="/Users/molli-p/count-distinct-watdiv"
+QUERY_DIR = f"{ROOT}/queries/top5_cd_original"
 QUERY_FILES = [os.path.splitext(f)[0] for f in os.listdir(QUERY_DIR) if f.endswith(".sparql")]
-RESULT_DIR = f"{ROOT}/output/CRAWD"
+RESULT_DIR = f"{ROOT}/output/CRAWD-original"
 
 # Not sure what it does...
 #include: "../scripts/sparql_rewrite.py" 
@@ -59,17 +63,11 @@ rule run_sparql_query:
         #     echo $(pwd)  > {output}
         #     """)
 
-        shell(f"""
+        shell_cmd = f"""
             cd {ROOT}/sage-jena
-            mvn exec:java -pl rawer \
-                -Dexec.args="\
-                --database={ROOT}/watdiv10M.jnl \
-                --file={input.query_file} \
-                --limit={limit} \
-                -sl={sl}\
-                --threads=1 -n=5\
-                --report" \
-                &>  {output}
-           """)
+            mvn exec:java -pl rawer -Dexec.args=" --database={ROOT}/data/blazegraph.jnl --file={input.query_file} --limit={limit} -sl={sl} --threads=1 -n=5 --report" &>  {output}
+           """
+
+        shell(shell_cmd)
 
 

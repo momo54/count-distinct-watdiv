@@ -1,0 +1,9 @@
+select (COUNT(DISTINCT ?v6) as ?cdv6) WHERE {
+<http://db.uwaterloo.ca/~galuc/wsdbm/Purchase60407> <http://db.uwaterloo.ca/~galuc/wsdbm/purchaseFor> ?v3 . 
+?v2 <http://purl.org/goodrelations/includes> ?v3 . 
+?v2 <http://schema.org/eligibleRegion> ?v1 . 
+?v2 <http://purl.org/goodrelations/validThrough> ?v4 . 
+?v2 <http://schema.org/eligibleQuantity> ?v5 . 
+?v0 <http://www.geonames.org/ontology#parentCountry> ?v1 . 
+?v6 <http://schema.org/nationality> ?v1 . 
+}

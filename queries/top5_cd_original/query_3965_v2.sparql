@@ -1,0 +1,6 @@
+select (COUNT(DISTINCT ?v2) as ?cdv2) WHERE {
+<http://db.uwaterloo.ca/~galuc/wsdbm/City125> <http://www.geonames.org/ontology#parentCountry> ?v1 . 
+?v2 <http://schema.org/eligibleRegion> ?v1 . 
+?v4 <http://schema.org/nationality> ?v1 . 
+?v2 <http://schema.org/eligibleQuantity> ?v3 . 
+}

@@ -1,0 +1,11 @@
+select (COUNT(DISTINCT ?v5) as ?cdv5) WHERE {
+?v0 <http://db.uwaterloo.ca/~galuc/wsdbm/gender> <http://db.uwaterloo.ca/~galuc/wsdbm/Gender0> . 
+?v0 <http://schema.org/nationality> ?v8 . 
+?v0 <http://xmlns.com/foaf/homepage> ?v1 . 
+?v2 <http://schema.org/eligibleRegion> ?v8 . 
+?v2 <http://purl.org/goodrelations/includes> ?v3 . 
+?v2 <http://purl.org/goodrelations/serialNumber> ?v5 . 
+?v2 <http://purl.org/goodrelations/validThrough> ?v6 . 
+?v2 <http://schema.org/eligibleQuantity> ?v7 . 
+?v4 <http://purl.org/goodrelations/offers> ?v2 . 
+}

@@ -21,7 +21,7 @@ import time
 from sparql_rewrite import CDVisitor
 
 
-def gen_query(var,query_name,query_dir):
+def gen_query(var,query_name,query_dir,destination_dir):
     with open(query_dir+"/"+query_name) as f:
         query_str = f.read()
     parsed_query = parseQuery(query_str)
@@ -32,22 +32,26 @@ def gen_query(var,query_name,query_dir):
     result="".join(cdvisitor.my_query)
     print(f"Generated query: {result}")
     query_name = query_name.split('.')[0]
-    with open("output/selected_queries/"+query_name.split('.')[0]+"_"+var+".sparql", "w") as f:
+    with open(destination_dir+"/"+query_name.split('.')[0]+"_"+var+".sparql", "w") as f:
         f.write(result)
 
-def generate_watdiv(path,query_dir):
+def generate_watdiv(path,query_dir,destination_dir):
     df = pd.read_csv(path)
     print(",".join(df.columns.tolist()))
     df.sort_values(by='dv', ascending=False,inplace=True)
-    for index, row in df.head(30).iterrows():
+    for index, row in df.head(len(df)).iterrows():
         var = row['var']
         query_name = row['query']
 
-        gen_query(var,query_name,query_dir)
+        gen_query(var,query_name,query_dir,destination_dir)
         row['query']=row['query'].split('.')[0]+"_"+var
         print(",".join(row.astype(str).tolist()))
-        # Your code here to process var and query_name
 
 if __name__ == "__main__":
-    # python scripts/generate_cd_queries.py > output/GT.csv
-    generate_watdiv("output/final.csv","queries/cd_watdiv")
+    if len(sys.argv) != 4:
+        print("Usage: python script.py <query_name file> <source_dir> <destination_dir>")
+    else:
+        file_path = sys.argv[1]
+        source_dir=sys.argv[2]
+        destination_dir=sys.argv[3]
+        generate_watdiv(file_path,source_dir,destination_dir)

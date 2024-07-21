@@ -1,0 +1,7 @@
+select (COUNT(DISTINCT ?v0) as ?cdv0) WHERE {
+?v0 <http://db.uwaterloo.ca/~galuc/wsdbm/gender> <http://db.uwaterloo.ca/~galuc/wsdbm/Gender1> . 
+?v0 <http://db.uwaterloo.ca/~galuc/wsdbm/userId> ?v5 . 
+?v0 <http://schema.org/email> ?v3 . 
+?v0 <http://xmlns.com/foaf/familyName> ?v1 . 
+?v0 <http://xmlns.com/foaf/givenName> ?v2 . 
+}

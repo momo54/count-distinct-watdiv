@@ -1,0 +1,3 @@
+select (COUNT(DISTINCT ?o) as ?cdo) WHERE {
+?s ?p ?o . 
+}

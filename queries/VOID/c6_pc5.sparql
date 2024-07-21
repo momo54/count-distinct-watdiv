@@ -1,0 +1,4 @@
+select * {
+  ?s a <http://db.uwaterloo.ca/~galuc/wsdbm/ProductCategory5>	 .
+  ?s ?p ?o
+}
