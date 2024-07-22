@@ -32,7 +32,7 @@ def chaolee_parse_result(result_file):
 
             result=[query_name,config, run_number,
                 float(BigN_SampleSize), float(CHAOLEE_SampleSize), 
-                Nb_Total_Scans, Execution_time,round(float(Result_cd[1:]))]   
+                Nb_Total_Scans, Execution_time,float(Result_cd[1:])]   
             results_str = [str(element) for element in result]
             results.append(",".join(results_str))
         return results
