@@ -34,7 +34,7 @@ def crawd_parse_results(result_file):
 
             result=[query_name,config, run_number,
                 float(WJ_SampleSize), float(CRAWD_SampleSize), float(Sum_F_mu_SampleSize), float(Sum_F_mu_success), float(Sum_F_mu_fail),
-                N_hat, Nb_Total_Scans, Execution_time,round(float(Result_cd[1:]))]
+                N_hat, Nb_Total_Scans, Execution_time,float(Result_cd[1:])]
             results_str = [str(element) for element in result]
             results.append(",".join(results_str))
         return results
